@@ -10,9 +10,6 @@ public class Moto extends Veiculo{
     }
 
 
-    public boolean isBau() {
-        return this.isBau;
-    }
-
+    public boolean isBau() {return this.isBau;}
 
 }

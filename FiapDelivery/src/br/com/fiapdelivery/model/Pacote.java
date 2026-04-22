@@ -11,6 +11,12 @@ public class Pacote {
         this.status = status;
     }
 
+    public void atualizaStatus(String status){
+        this.status = status;
+        System.out.println("Status do pedido alterado para: " + status);
+    }
+
+
     public String getCodigo() { return codigo; }
     public double getPeso() { return peso; }
     public String getStatus() { return status; }
