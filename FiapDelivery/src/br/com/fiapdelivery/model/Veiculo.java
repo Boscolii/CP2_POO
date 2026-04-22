@@ -8,9 +8,10 @@ public class Veiculo {
 
     public Veiculo(String placa, double capacidadeKG){
         this.setPlaca(placa);
+        this.setCapacidadeKG(capacidadeKG)
     }
 
-    private void setCapacidadeKG(){
+    private void setCapacidadeKG(double capacidadeKG){
         if (capacidadeKG > 0) {
             this.capacidadeKG = capacidadeKG;
         }else {
