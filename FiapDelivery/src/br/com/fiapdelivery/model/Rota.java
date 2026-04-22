@@ -2,18 +2,18 @@ package br.com.fiapdelivery.model;
 
 public class Rota {
     private Pacote pacoteEnviado;
-    private Caminhao caminhaoUtilizado;
+    private Veiculo veiculoUtilizado;
 
-    public Rota(Pacote pacoteEnviado, Caminhao caminhaoUtilizado){
+    public Rota(Pacote pacoteEnviado, Veiculo veiculoUtilizado){
         this.pacoteEnviado = pacoteEnviado;
-        this.caminhaoUtilizado = caminhaoUtilizado;
+        this.veiculoUtilizado = veiculoUtilizado;
 
         System.out.println("Rota solicidade para pacote: "+ this.pacoteEnviado.getCodigo());
     }
 
 
     public void dadosPedido(){
-        System.out.println("Levando pacote: " + pacoteEnviado.getCodigo() + " no veiculo " + caminhaoUtilizado.getPlaca()
+        System.out.println("Levando pacote: " + pacoteEnviado.getCodigo() + " no veiculo " + veiculoUtilizado.getPlaca()
         + "| Status: " + pacoteEnviado.getStatus());
     }
 }
