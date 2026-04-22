@@ -20,9 +20,9 @@ public class Veiculo {
     }
 
 
-    private void setPlaca(String novaPlaca) {
-        if (novaPlaca != null && !novaPlaca.trim().isEmpty()) {
-            this.placa = novaPlaca;
+    private void setPlaca(String placa) {
+        if (placa != null && !placa.trim().isEmpty()) {
+            this.placa = placa;
             System.out.println("✅ Sucesso: A placa agora é " + this.placa);
         } else {
             System.out.println("❌ Erro de Validação: A placa informada é inválida!");
