@@ -5,8 +5,8 @@ public class Pacote {
     private double peso;
     private String status;
 
-    public Pacote(String codigoEstrada, double peso, String status) {
-        this.codigo = codigoEstrada;
+    public Pacote(String codigo, double peso, String status) {
+        this.codigo = codigo;
         this.peso = peso;
         this.status = status;
     }
