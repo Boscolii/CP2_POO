@@ -1,0 +1,43 @@
+package br.com.fiapdelivery.model;
+
+public class Veiculo {
+
+    private String placa;
+    private double capacidadeKG;
+
+
+    public Veiculo(String placa, double capacidadeKG){
+        this.setPlaca(placa);
+    }
+
+    private void setCapacidadeKG(){
+        if (capacidadeKG > 0) {
+            this.capacidadeKG = capacidadeKG;
+        }else {
+            System.out.println("A capacidade deve ser maior que 0");
+        }
+    }
+
+
+    private void setPlaca(String novaPlaca) {
+        if (novaPlaca != null && !novaPlaca.trim().isEmpty()) {
+            this.placa = novaPlaca;
+            System.out.println("✅ Sucesso: A placa agora é " + this.placa);
+        } else {
+            System.out.println("❌ Erro de Validação: A placa informada é inválida!");
+        }
+    }
+
+    public String getPlaca(){
+        return this.placa;
+    }
+
+    public double getCapacidadeKG(){
+        return this.capacidadeKG;
+    }
+
+    public void atualizarPlaca(String novaPlaca) {
+        System.out.println("Solicitada atualização de placa no Detran para o veículo ");
+        this.setPlaca(novaPlaca);
+    }
+}
